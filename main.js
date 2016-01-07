@@ -26,8 +26,8 @@ var mainState = {
         spaceKey.onDown.add(this.jump, this);
         
 
-var touchScreen = this.game.add.button(200, 200)
-        touchScreen.events.onInputOver.add (this.jump, this);
+        var touchScreen = this.game.add.button(200, 200)
+        touchScreen.events.onInputOver.add(this.jump, this);
         // pipes
         this.pipes = game.add.group(); //create a group
         this.pipes.enableBody = true; // add physics
