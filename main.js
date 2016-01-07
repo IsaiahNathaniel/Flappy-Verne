@@ -24,12 +24,8 @@ var mainState = {
         // jump function
         var spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
         spaceKey.onDown.add(this.jump, this);
-        if (game.input.pointer1.isDown) {this.jump};
-        button.events.onInputOver.add (isTouchingButton, this);
 
-        function isTouchingButton (button, pointer) {
-        this.bird.body.velocity.y = -350;  
-        }
+        button.events.onInputOver.add (this.jump, this);
         // pipes
         this.pipes = game.add.group(); //create a group
         this.pipes.enableBody = true; // add physics
