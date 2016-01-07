@@ -28,7 +28,7 @@ var mainState = {
         button.events.onInputOver.add (isTouchingButton, this);
 
         function isTouchingButton (button, pointer) {
-        this.jump ();
+        this.bird.body.velocity.y = -350;  
         }
         // pipes
         this.pipes = game.add.group(); //create a group
