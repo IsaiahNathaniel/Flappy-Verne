@@ -22,7 +22,7 @@ var mainState = {
         game.physics.arcade.enable(this.bird)
         this.bird.body.gravity.y = 1000;
         // jump function
-        var spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+        var spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.T);
         spaceKey.onDown.add(this.jump, this);
         
 
@@ -62,8 +62,8 @@ var mainState = {
     },
     addRowOfPipes: function() {
         // Pick floor hole.
-        //var hole = Math.floor(Math.random() * 5) + 1;\
-        var hole = 0;
+        var hole = Math.floor(Math.random() * 5) + 1;\
+
         // add 6 pipes
         for (var i = 0; i < 8; i++)
             if (i != hole && i != hole + 1 && i != hole + 2)
