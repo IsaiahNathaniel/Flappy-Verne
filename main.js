@@ -62,7 +62,7 @@ var mainState = {
     },
     addRowOfPipes: function() {
         // Pick floor hole.
-        var hole = Math.floor(Math.random() * 5) + 1;\
+        var hole = Math.floor(Math.random() * 5) + 1;
 
         // add 6 pipes
         for (var i = 0; i < 8; i++)
