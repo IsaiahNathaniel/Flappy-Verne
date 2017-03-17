@@ -42,7 +42,7 @@ var mainState = {
         // checks for world leaving
         if (this.bird.inWorld == false)
             this.restartGame();
-        game.physics.arcade.overlap(this.bird, this.pipes, this.restartGame, null, this);
+        game.physics.arcade.overlap(this.bird, this.pipes, null, null, this);
     },
     jump: function() {
         //adds vertical velocity
